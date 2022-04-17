@@ -1,13 +1,7 @@
-import { useState } from 'react'
-import logo from './logo.svg'
-import './App.css'
-
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
     <div className="App">
-      <h1 className="text-3xl font-bold underline">
+      <h1 className="text-3x1 font-bold underline">
           Welcome, Sojourner!
       </h1>
     </div>
