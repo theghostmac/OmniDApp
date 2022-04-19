@@ -17,7 +17,6 @@ contract Transactions {
         uint256 timestamp;
         string keyword;
     }
-ls
 
     // create an array to store transactions with above objects as fields
     TransferStructure[] transactions;
