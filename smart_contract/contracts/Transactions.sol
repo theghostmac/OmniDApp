@@ -17,6 +17,7 @@ contract Transactions {
         uint256 timestamp;
         string keyword;
     }
+ls
 
     // create an array to store transactions with above objects as fields
     TransferStructure[] transactions;
@@ -25,16 +26,14 @@ contract Transactions {
         transactionCounter += 1;
         transactions.push(TransferStructure(msg.sender, receiver, amount, message, block.timestamp, keyword));
 
-
+        emit Transfer(msg.sender, receiver, amount, message, block.timestamp, keyword);
     }
 
     function getAllTransactions() public view returns (TransferStructure[] memory) {
-        // return transactions;
+        return transactions;
     }
 
     function getTransactionCount() public view returns (uint256) {
-        // return trtansactionCounter;
+        return transactionCounter;
     }
-
-
 }
