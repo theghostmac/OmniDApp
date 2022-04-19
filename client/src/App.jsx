@@ -11,7 +11,7 @@ const App = () => {
       <Transactions />
       <Footer />
     </div>
-  )
+  );
 }
 
 export default App;
