@@ -1,5 +1,5 @@
-// import { HiMenuAlt4 } from 'react-icons/hi';
-// import { AiOutlineClose } from 'react-icons/ai';
+import { HiMenuAlt4 } from 'react-icons/hi';
+import { AiOutlineClose } from 'react-icons/ai';
 
 import logo from '../../images/logo.png';
 
@@ -7,7 +7,11 @@ import logo from '../../images/logo.png';
 
 const Navbar = () => {
     return (
-        <h1>Navbar</h1>
+        // w-full will preserve the website to full scale
+        // search for the meaning of each keyword in the tailwindcss documentation
+        <nav className='w-full flex md:justify-center justify-between items-center p-4'> 
+
+        </nav>
     );
 }
 
