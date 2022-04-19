@@ -8,7 +8,7 @@ contract Transactions {
     // we  will call the event later on
     event Transfer(address from, address receiver, uint amount, string message, uint256 timestamp, string keyword);
 
-    // struct will hold all 
+    // struct will hold all above object properties
     struct TransferStructure {
         address sender;
         address receiver;
@@ -18,19 +18,22 @@ contract Transactions {
         string keyword;
     }
 
-    // create an array to store the above objects.
+    // create an array to store transactions with above objects as fields
     TransferStructure[] transactions;
 
-    function addToBlockchain() public {
+    function addToBlockchain(address payable receiver, uint amount, string memory message, string memory keyword) public {
+        transactionCounter += 1;
+        transactions.push(TransferStructure(msg.sender, receiver, amount, message, block.timestamp, keyword));
+
 
     }
 
     function getAllTransactions() public view returns (TransferStructure[] memory) {
-
+        // return transactions;
     }
 
-    function getTransactionCount() public {
-
+    function getTransactionCount() public view returns (uint256) {
+        // return trtansactionCounter;
     }
 
 
