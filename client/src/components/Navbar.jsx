@@ -20,8 +20,9 @@ const Navbar = () => {
                 <img src={logo} alt='logo' className='w-32 cursor-pointer'></img>
             </div>
             <ul className='text-white md:flex hidden list-none flex-row justify-between items-center flex-initial'>
-
-
+                {["NFT Marketplace", "Exchange", "Technical Tutorials", "Wallets"].map((item, index) => (
+                    <NavbarItem key={item + index} title={item} />
+                ))}
             </ul>
         </nav>
     );
