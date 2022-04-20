@@ -1,15 +1,7 @@
-# Basic Sample Hardhat Project
+# Build a Simple DApp for NFT Marketplace and Eth Exchanges
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+This project demonstrates the usage of ReactJS, Solidity, and TailwindCSS in quickly building a smart contract on Hardhat.
 
-Try running some of the following tasks:
+It is in no way a properly working application, but a demo for a tutorial article published on LogRocket.
 
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
-```
+I should remember to add the link to the article after it is being published by LogRocket content team.
